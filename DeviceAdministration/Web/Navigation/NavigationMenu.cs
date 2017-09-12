@@ -60,7 +60,7 @@ namespace Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.
                     Class = "navigation__link--jobs",
                     MinimumPermission = Permission.ViewJobs,
                 },
-                new NavigationMenuItem
+                /*new NavigationMenuItem
                 {
                     Text = Strings.NavigationMenuItemsAdvanced,
                     Action = "CellularConn",
@@ -68,7 +68,7 @@ namespace Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.
                     Selected = false,
                     Class = "nav_advanced",
                     MinimumPermission = Permission.CellularConn,
-                },
+                },*/
             };
         }
 
