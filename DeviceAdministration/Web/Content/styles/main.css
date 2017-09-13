@@ -189,7 +189,7 @@ main.main_no_nav {
   width: 95px;
   height: 100%;
   z-index: 300;
-  background-color: #212528;
+  background-color: #5ea2bf; /* #212528; */
 }
 .navigation__link {
   display: block;
@@ -209,7 +209,7 @@ main.main_no_nav {
 }
 .navigation__link:hover {
   color: #f2f2f2;
-  background-color: #999;
+  background-color: #0078a0; /*#999;*/
   text-decoration: none;
 }
 .navigation__link--selected {
@@ -274,7 +274,7 @@ nav {
   width: 95px;
   height: 100%;
   z-index: 300;
-  background-color: #212528;
+  background-color: #5ea2bf; /*#212528; */
 }
 nav a {
   display: block;
@@ -293,12 +293,12 @@ nav a {
   white-space: nowrap;
 }
 nav a:hover {
-  color: #f2f2f2;
+  color: #f2f2f2; 
   background-color: #999;
   text-decoration: none;
 }
 nav .selected {
-  background-color: #000;
+  background-color: #cec402; /* #000; */
 }
 .details_grid {
   display: none;
@@ -1131,16 +1131,16 @@ table#alertHistoryTable tr.selectedAlert {
   height: 263px;
 }
 .dashboard_alert_history--dynamic_height {
-  height: 317px;
+  height: 100%; /* 317px; */
 }
 @media screen and (max-width: 1100px) {
   .dashboard_alert_history--dynamic_height {
-    height: 463px;
+    height: 100%; /*463px; */
   }
 }
 @media screen and (min-width: 1500px) {
   .dashboard_alert_history--dynamic_height {
-    height: 171px;
+    height: 100%; /*171px; */
   }
 }
 .dashboard_alert_history__alertHeader {
@@ -4011,8 +4011,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #343A41;
-  border-color: #1d2125;
+  background-color: #5ea2bf; /* #343A41; */
+  border-color: #5ea2bf; /*#1d2125;*/
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;

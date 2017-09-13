@@ -13,8 +13,9 @@
     <!--<title>DAYS IoT - Демонстрация - @ViewBag.Title</title>-->
     <script type="text/javascript">
         //var cultureInfo = '@Culture';
-        var cultureInfo = 'ru-RU';
-        var cultureInfoShort = '@Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName'
+        var cultureInfo = 'ru';
+        //var cultureInfoShort = '@Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName'
+        var cultureInfoShort = 'ru'
 
         var baseLayoutResources = {
             commandCToCopy: '@Html.JavaScriptString(Strings.CommandCToCopy)',
@@ -51,12 +52,12 @@
                 </div>
                 <div id="accountMenu" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <!--<li class="dropdown">
-                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 <span class="language-icon"></span>
-                            </a>-->
-                            <!--<ul class="dropdown-menu" role="menu" aria-labelledby="account-menu">-->
-                                <!--@foreach (var language in CultureHelper.GetLanguages())
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="account-menu">
+                                @foreach (var language in CultureHelper.GetLanguages())
                                 {
                                     if (language.IsCurrent)
                                     {
@@ -71,13 +72,13 @@
                                         </li>
                                     }
                                 }
-                            </ul>-->
-                        </li>-->
+                            </ul>
+                        </li>
                         <li class="dropdown account-dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 <span class="account-avatar"></span>
                                 <span class="account">
-                                    <span class="account-name">@PrincipalHelper.GetEmailAddress(User)</span>
+                                    <!--<span class="account-name">@PrincipalHelper.GetEmailAddress(User)</span>-->
                                     @if (User.IsInRole("Admin"))
                                     {
                                         <span class="account-subtitle">@Strings.AdministratorRole</span>

@@ -42,6 +42,7 @@ namespace Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.
                     Class = "navigation__link--rules",
                     MinimumPermission = Permission.ViewRules,
                 },
+                /*
                 new NavigationMenuItem
                 {
                     Text = Strings.NavigationMenuItemActions,
@@ -50,7 +51,8 @@ namespace Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.
                     Selected = false,
                     Class = "navigation__link--actions",
                     MinimumPermission = Permission.ViewActions,
-                },
+                },*/
+                /*
                 new NavigationMenuItem
                 {
                     Text = Strings.NavigationMenuItemJobs,
@@ -59,7 +61,7 @@ namespace Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.
                     Selected = false,
                     Class = "navigation__link--jobs",
                     MinimumPermission = Permission.ViewJobs,
-                },
+                },*/
                 /*new NavigationMenuItem
                 {
                     Text = Strings.NavigationMenuItemsAdvanced,

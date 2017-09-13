@@ -10,18 +10,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="~/Content/favicon.ico" type="image/x-icon" />
-    <title>@Strings.IoTDevicePortalSignIn</title>
+    <!--<title>@Strings.IoTDevicePortalSignIn</title>-->
+    <title>DAYS IoT - Вход</title>
     @Styles.Render("~/Content/css")
 
 </head>
 <body>
 
     <header class="header_page">
-        <h1 class="header_page__head">@Strings.MicrosoftAzureIoTSuite</h1>
-        <a target="_blank" href="@Strings.InfoIconLink">
-            <img class="header_page__infoLinkImg" src="~/Content/img/icon_info_white.svg" alt="@Strings.Information" id="infoLinkImg" />
-        </a>
-        <h2 class="header_page__solution_name">@HeaderHelper.GetHeaderTitle()</h2>
+        <!--<h1 class="header_page__head">@Strings.MicrosoftAzureIoTSuite</h1>-->
+        <h1 class="header_page__head">Платформа DAYS IoT</h1>
+        <!--<a target="_blank" href="@Strings.InfoIconLink">-->
+        <a target="_blank" href="http://daysoit.ru">
+                <!--<img class="header_page__infoLinkImg" src="~/Content/img/icon_info_white.svg" alt="@Strings.Information" id="infoLinkImg" />-->
+                <img class="header_page__infoLinkImg" src="~/Content/img/icon_info_white.svg" alt="@Strings.Information" id="infoLinkImg" />
+            </a>
+        <!--<h2 class="header_page__solution_name">@HeaderHelper.GetHeaderTitle()</h2>-->
+        <h2 class="header_page__solution_name">Демонстрация решения для ЖКХ</h2>
     </header>
 
     <section class="sign_in_page">
@@ -40,17 +45,19 @@
                 <div class="content_inner content_inner_with_messages">
 
                     <p class="content_inner_with_messages__mesage_text">
-                        @Strings.YouMustBeSignedIn
+                        <!--@Strings.YouMustBeSignedIn-->
+                        Пожалуйста, выполните вход в систему
                     </p>
 
                     <p class="content_inner_with_messages__mesage_text">
-                        @Strings.YourSessionMayHaveExpired
+                        <!--@Strings.YourSessionMayHaveExpired-->
+                        Если вы выполняли вход в систему, время вашей сессии могло истечь
                     </p>
 
                 </div>
 
-                @Html.ActionLink(@Strings.SignIn, "Index", "Dashboard", null, new { @class = "button_base button" })
-
+                <!--@Html.ActionLink(@Strings.SignIn, "Index", "Dashboard", null, new { @class = "button_base button" })-->
+                @Html.ActionLink("Войти", "Index", "Dashboard", null, new { @class = "button_base button" })
             </div>
 
 
